@@ -3,8 +3,6 @@ namespace VSACXamarin
 {
     public class Constants
     {
-        public Constants()
-        {
-        }
+        public const string VsacApiKey = "[VSAC_APIKEY]";
     }
 }
