@@ -9,7 +9,7 @@ using Plugin.Connectivity;
 
 namespace VSACXamarin
 {
-    public class CloudDataStore : IDataStore<Item>
+    public class CloudDataStore : IDataStore<Item>, IDisposable
     {
         HttpClient client;
         IEnumerable<Item> items;
@@ -78,6 +78,14 @@ namespace VSACXamarin
             var response = await client.DeleteAsync($"api/item/{id}");
 
             return response.IsSuccessStatusCode;
+        }
+
+        public void Dispose()
+        {
+            if (client != null)
+            {
+                client.Dispose();
+            }
         }
     }
 }
