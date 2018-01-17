@@ -8,8 +8,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSACXamarin.iOS", "iOS\VSAC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSACXamarin.Droid", "Droid\VSACXamarin.Droid.csproj", "{EC4D4F2D-1770-4573-B107-922810BF271F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSACXamarin.UITest.Ios", "VSACXamarin.UITest.Ios\VSACXamarin.UITest.Ios.csproj", "{FFF84F68-5C6F-4998-A79A-38D9C363AFBE}"
-EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		VSACXamarin.projitems*{1890ad89-c23e-46d0-af80-b9d0ee432649}*SharedItemsImports = 13
@@ -57,22 +55,6 @@ Global
 		{EC4D4F2D-1770-4573-B107-922810BF271F}.QA|iPhone.ActiveCfg = QA|Any CPU
 		{EC4D4F2D-1770-4573-B107-922810BF271F}.QA|Any CPU.ActiveCfg = QA|Any CPU
 		{EC4D4F2D-1770-4573-B107-922810BF271F}.QA|Any CPU.Build.0 = QA|Any CPU
-		{FFF84F68-5C6F-4998-A79A-38D9C363AFBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FFF84F68-5C6F-4998-A79A-38D9C363AFBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FFF84F68-5C6F-4998-A79A-38D9C363AFBE}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{FFF84F68-5C6F-4998-A79A-38D9C363AFBE}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{FFF84F68-5C6F-4998-A79A-38D9C363AFBE}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{FFF84F68-5C6F-4998-A79A-38D9C363AFBE}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{FFF84F68-5C6F-4998-A79A-38D9C363AFBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FFF84F68-5C6F-4998-A79A-38D9C363AFBE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FFF84F68-5C6F-4998-A79A-38D9C363AFBE}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{FFF84F68-5C6F-4998-A79A-38D9C363AFBE}.Release|iPhone.Build.0 = Release|Any CPU
-		{FFF84F68-5C6F-4998-A79A-38D9C363AFBE}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{FFF84F68-5C6F-4998-A79A-38D9C363AFBE}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
-		{FFF84F68-5C6F-4998-A79A-38D9C363AFBE}.QA|iPhone.ActiveCfg = Release|Any CPU
-		{FFF84F68-5C6F-4998-A79A-38D9C363AFBE}.QA|iPhone.Build.0 = Release|Any CPU
-		{FFF84F68-5C6F-4998-A79A-38D9C363AFBE}.QA|Any CPU.ActiveCfg = Release|Any CPU
-		{FFF84F68-5C6F-4998-A79A-38D9C363AFBE}.QA|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
