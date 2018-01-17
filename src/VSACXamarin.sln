@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSACXamarin.iOS", "iOS\VSAC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSACXamarin.Droid", "Droid\VSACXamarin.Droid.csproj", "{EC4D4F2D-1770-4573-B107-922810BF271F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSACXamarin.UITest.iOS", "VSACXamarin.UITest.iOS\VSACXamarin.UITest.iOS.csproj", "{1C3E0E7E-CEC7-47EB-98C5-60DC033D0C9A}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		VSACXamarin.projitems*{1890ad89-c23e-46d0-af80-b9d0ee432649}*SharedItemsImports = 13
@@ -55,6 +57,22 @@ Global
 		{EC4D4F2D-1770-4573-B107-922810BF271F}.QA|iPhone.ActiveCfg = QA|Any CPU
 		{EC4D4F2D-1770-4573-B107-922810BF271F}.QA|Any CPU.ActiveCfg = QA|Any CPU
 		{EC4D4F2D-1770-4573-B107-922810BF271F}.QA|Any CPU.Build.0 = QA|Any CPU
+		{1C3E0E7E-CEC7-47EB-98C5-60DC033D0C9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C3E0E7E-CEC7-47EB-98C5-60DC033D0C9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C3E0E7E-CEC7-47EB-98C5-60DC033D0C9A}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{1C3E0E7E-CEC7-47EB-98C5-60DC033D0C9A}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{1C3E0E7E-CEC7-47EB-98C5-60DC033D0C9A}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{1C3E0E7E-CEC7-47EB-98C5-60DC033D0C9A}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{1C3E0E7E-CEC7-47EB-98C5-60DC033D0C9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C3E0E7E-CEC7-47EB-98C5-60DC033D0C9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C3E0E7E-CEC7-47EB-98C5-60DC033D0C9A}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{1C3E0E7E-CEC7-47EB-98C5-60DC033D0C9A}.Release|iPhone.Build.0 = Release|Any CPU
+		{1C3E0E7E-CEC7-47EB-98C5-60DC033D0C9A}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{1C3E0E7E-CEC7-47EB-98C5-60DC033D0C9A}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{1C3E0E7E-CEC7-47EB-98C5-60DC033D0C9A}.QA|iPhone.ActiveCfg = Release|Any CPU
+		{1C3E0E7E-CEC7-47EB-98C5-60DC033D0C9A}.QA|iPhone.Build.0 = Release|Any CPU
+		{1C3E0E7E-CEC7-47EB-98C5-60DC033D0C9A}.QA|Any CPU.ActiveCfg = Release|Any CPU
+		{1C3E0E7E-CEC7-47EB-98C5-60DC033D0C9A}.QA|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
