@@ -15,7 +15,9 @@ namespace VSACXamarin.iOS
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
-
+#if DEBUG || QA
+            Xamarin.Calabash.Start();
+#endif
 
             return base.FinishedLaunching(uiApplication, launchOptions);
         }
