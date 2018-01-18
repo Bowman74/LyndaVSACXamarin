@@ -20,17 +20,16 @@ namespace VSACXamarin
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
-            throw new InvalidCastException("Hey we got an error");
-            //var item = args.SelectedItem as Item;
-            //if (item == null)
-            //    return;
+            var item = args.SelectedItem as Item;
+            if (item == null)
+                return;
 
-            //Analytics.TrackEvent("Item Selected", new Dictionary<string, string> {{ "id", item.Id} , {"description", item.Description}});
+            Analytics.TrackEvent("Item Selected", new Dictionary<string, string> {{ "id", item.Id }, {"description", item.Description}});
 
-            //await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
+            await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
 
-            //// Manually deselect item
-            //ItemsListView.SelectedItem = null;
+            // Manually deselect item
+            ItemsListView.SelectedItem = null;
         }
 
         async void AddItem_Clicked(object sender, EventArgs e)
