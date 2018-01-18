@@ -4,6 +4,9 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 namespace VSACXamarin.iOS
 {
@@ -12,6 +15,10 @@ namespace VSACXamarin.iOS
     {
         public override bool FinishedLaunching(UIApplication uiApplication, NSDictionary launchOptions)
         {
+
+#if !DEBUG
+            AppCenter.Start(Constants.VsacApiKey, typeof(Analytics), typeof(Crashes));
+#endif
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 

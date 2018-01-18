@@ -7,6 +7,9 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 namespace VSACXamarin.Droid
 {
@@ -19,6 +22,10 @@ namespace VSACXamarin.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
+
+#if !DEBUG
+            AppCenter.Start(Constants.VsacApiKey, typeof(Analytics), typeof(Crashes));
+#endif
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
