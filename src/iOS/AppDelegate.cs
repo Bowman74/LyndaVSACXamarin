@@ -7,6 +7,7 @@ using UIKit;
 using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
+using Microsoft.AppCenter.Push;
 
 namespace VSACXamarin.iOS
 {
@@ -17,7 +18,7 @@ namespace VSACXamarin.iOS
         {
 
 #if !DEBUG
-            AppCenter.Start(Constants.VsacApiKey, typeof(Analytics), typeof(Crashes));
+            AppCenter.Start(Constants.VsacApiKey, typeof(Analytics), typeof(Crashes), typeof(Push));
 #endif
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
@@ -27,6 +28,19 @@ namespace VSACXamarin.iOS
 #endif
 
             return base.FinishedLaunching(uiApplication, launchOptions);
+        }
+
+        public override void DidReceiveRemoteNotification(UIApplication application, NSDictionary userInfo, Action<UIBackgroundFetchResult> completionHandler)
+        {
+            var result = Push.DidReceiveRemoteNotification(userInfo);
+            if (result) 
+            {
+                completionHandler?.Invoke(UIBackgroundFetchResult.NewData);   
+            } else 
+            {
+                completionHandler?.Invoke(UIBackgroundFetchResult.NoData);
+            }
+
         }
     }
 }
