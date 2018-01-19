@@ -25,6 +25,7 @@ namespace VSACXamarin.Droid
             base.OnCreate(bundle);
 
 #if !DEBUG
+            Push.SetSenderId("1071445846216");
             AppCenter.Start(Constants.VsacApiKey, typeof(Analytics), typeof(Crashes), typeof(Push));
 #endif
 
