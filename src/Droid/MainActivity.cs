@@ -10,6 +10,7 @@ using Android.OS;
 using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
+using Microsoft.AppCenter.Push;
 
 namespace VSACXamarin.Droid
 {
@@ -24,7 +25,7 @@ namespace VSACXamarin.Droid
             base.OnCreate(bundle);
 
 #if !DEBUG
-            AppCenter.Start(Constants.VsacApiKey, typeof(Analytics), typeof(Crashes));
+            AppCenter.Start(Constants.VsacApiKey, typeof(Analytics), typeof(Crashes), typeof(Push));
 #endif
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
